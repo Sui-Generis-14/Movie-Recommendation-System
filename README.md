@@ -1,19 +1,19 @@
-# 🎬 Movie Recommendation System
+# Movie Recommendation System
 
 This is a Streamlit-based movie recommendation system that allows users to search for movies based on:
-- 🎥 Movie Title
-- 🎭 Actor Name
-- 🎬 Director Name
-- 🧬 Keyword or Genre
+- Movie Title
+- Actor Name
+- Director Name
+- Keyword or Genre
 
 The app suggests movies with their cast, crew, and average user rating.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 This project demonstrates how content-based filtering can be used to build a recommendation engine using text-based features. It was implemented using Python, with preprocessing and modeling done in a Jupyter Notebook (Google Colab), and deployed using Streamlit.
 
-### 🔧 Tools Used
+### Tools Used
 - **Python**
 - **Pandas** for data manipulation
 - **Scikit-learn** for feature extraction and cosine similarity
@@ -22,7 +22,7 @@ This project demonstrates how content-based filtering can be used to build a rec
 
 ---
 
-## 📦 Dataset
+## Dataset
 This project uses [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle.
 
 Download these files from Kaggle:
@@ -36,7 +36,7 @@ Place all files in the working directory before running the notebook.
 
 ---
 
-## 🧪 How It Works
+## How It Works
 1. Data is preprocessed and merged from various files.
 2. A `movie_profile` feature is created by combining genres, cast, crew, and keywords.
 3. Cosine similarity is calculated using `CountVectorizer` to measure similarity between movies.
@@ -45,12 +45,12 @@ Place all files in the working directory before running the notebook.
 
 ---
 
-## 🛑 Why Pickle Files Are Not Included
+## Why Pickle Files Are Not Included
 GitHub has a strict file size limit of **100 MB**, and the `cosine_sim.pkl` file exceeded **1.7 GB**. To avoid pushing large files, they were excluded using `.gitignore`. You will need to generate them locally using the notebook.
 
 ---
 
-## 🧾 Steps to Run This Project
+## Steps to Run This Project
 
 ### 1. Clone the Repo
 ```bash
@@ -89,7 +89,7 @@ You’ll be able to:
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 MovieRecommendationSystem/
 ├── movie_recommender_app.py             # Streamlit app
@@ -100,7 +100,7 @@ MovieRecommendationSystem/
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 - Add poster images using TMDB API
 - Deploy to Streamlit Cloud or Hugging Face Spaces
 - Add fuzzy matching for better name resolution
